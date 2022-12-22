@@ -21,7 +21,7 @@ public class TokenController {
         model.addAttribute("idToken", oidcUser.getIdToken());
         model.addAttribute("accessToken", client.getAccessToken());
 
-        return "welcome: " + oidcUser.getName();
+        return "welcome: " + oidcUser.getEmail();
     }
 
     @GetMapping("/token")
